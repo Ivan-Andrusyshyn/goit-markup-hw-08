@@ -56,6 +56,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    fill: var(--color-black);
     &:hover,
     &:focus {
             fill: var(--color-blue);
@@ -63,6 +64,7 @@
 }
 
 .close-svg {
+    fill: var(--color-black);
     justify-content: center;
     align-items: center;
 }

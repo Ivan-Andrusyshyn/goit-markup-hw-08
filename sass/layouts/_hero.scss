@@ -20,7 +20,7 @@ background-image:linear-gradient(rgba(47, 48, 58, 0.4),
     }
 @media screen and (min-width:480px) {
             // max-width: 767px;
-            padding: 118px 60px 118px 60px;
+            padding: 118px 0;
             background-image:linear-gradient(rgba(47, 48, 58, 0.4),
                     rgba(47, 48, 58, 0.4)), url(../images/Header-tabl.jpg);
 @media (min-device-pixel-ratio: 2),
@@ -33,7 +33,7 @@ background-image:linear-gradient(rgba(47, 48, 58, 0.4),
         } 
 @media screen and (min-width:768px) {
            max-width: 1600px;
-            padding: 204px 118px 204px 118px;
+            padding: 204px 0;
             background-image: linear-gradient(rgba(47, 48, 58, 0.4),
             rgba(47, 48, 58, 0.4)), url(../images/hero1.jpg);
 @media (min-device-pixel-ratio:2),
@@ -45,25 +45,24 @@ background-image:linear-gradient(rgba(47, 48, 58, 0.4),
         }
             }
 @media screen and (min-width:1200px) {
-              padding: 200px 452px 200px 452px;
-} 
-}
+              padding: 200px 0;
+} }
 .hero-title {
     text-align: center;
     text-transform: uppercase;
     margin-bottom: 30px;
     font-size: 26px;
-    min-width:100%;
+    // min-width:100%;
     line-height: calc(42 / 26);
     letter-spacing: 0.06em; 
     display: flex;
     align-items: baseline;
     justify-content: center;
     @media screen and (min-width:480px), (min-width:768px) {
-          width:360px
+        //   width:360px
         }
     @include desktop {
-        width: 696px;
+        // width: 696px;
             font-size: 44px;
            line-height: calc(60 / 44);
         }

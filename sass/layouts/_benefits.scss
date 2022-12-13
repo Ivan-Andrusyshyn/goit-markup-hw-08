@@ -27,9 +27,12 @@
         padding-bottom: 94px;
        }
 }
-
 .benefits__list {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
    @include tablet{
+    flex-direction:row;
         flex-wrap: wrap;
         display: flex;
         gap: 30px;
@@ -39,7 +42,6 @@
             display: flex;
          }
 }
-    
 .benefits__item {
 max-width: 450px;
 @include tablet {
@@ -47,16 +49,9 @@ max-width: 450px;
     }
 @include desktop {
     width: 270px;
-}}
-.benefits__item:not(:last-child) {
-   @include tablet{
-        margin-bottom: 30px;
-        }
-   @include desktop{
-            margin-bottom: 0;
-        }
-   
 }
+}
+
 .benefit__icon {
     border-radius: 4px;
     margin-bottom: 30px;
@@ -117,6 +112,9 @@ max-width: 450px;
     line-height: calc(16/14);
     width: 100%;
     text-align: center;
+@media screen and (min-width:768px){
+    text-align:left;
+}
 }
 
 .benefits__subtitle {

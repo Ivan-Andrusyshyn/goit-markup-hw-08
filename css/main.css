@@ -42,6 +42,8 @@ ul {
 
 img {
   display: block;
+  max-width: 100%;
+  height: auto;
 }
 
 a:focus {
@@ -140,12 +142,14 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  fill: var(--color-black);
 }
 .close-modal:hover, .close-modal:focus {
   fill: var(--color-blue);
 }
 
 .close-svg {
+  fill: var(--color-black);
   justify-content: center;
   align-items: center;
 }
@@ -719,8 +723,13 @@ textarea:focus::-webkit-input-placeholder {
 }
 @media screen and (min-width: 768px) {
   .header {
-    padding: 32px 0;
+    padding: 24px 0;
     display: flex;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .header {
+    padding: 24px 0;
   }
 }
 
@@ -829,16 +838,10 @@ textarea:focus::-webkit-input-placeholder {
 }
 
 .contacts {
-  display: flex;
+  flex-direction: column;
+  gap: 0;
+  align-items: center;
   color: var(--color-gray);
-  gap: 50px;
-}
-@media screen and (min-width: 768px) {
-  .contacts {
-    flex-direction: column;
-    gap: 0;
-    align-items: center;
-  }
 }
 @media screen and (min-width: 1200px) {
   .contacts {
@@ -860,10 +863,8 @@ textarea:focus::-webkit-input-placeholder {
   }
 }
 
-@media screen and (min-width: 768px) {
-  .contacts__phone {
-    margin-right: 14px;
-  }
+.contacts__phone {
+  margin-right: 10px;
 }
 @media screen and (min-width: 1200px) {
   .contacts__phone {
@@ -873,9 +874,9 @@ textarea:focus::-webkit-input-placeholder {
 
 .contacts__link_phone,
 .contacts__link_mail {
-  letter-spacing: 0.02em;
-  font-size: 14px;
+  font-size: 12px;
   font-weight: 500;
+  line-height: 1.1666666667;
   line-height: 1.1428571429;
   text-decoration: none;
   color: var(--color-gray);
@@ -887,6 +888,14 @@ textarea:focus::-webkit-input-placeholder {
   transition-delay: 0;
   transition-property: color;
   transition-timing-function: var(--transition-cubic);
+}
+@media screen and (min-width: 1200px) {
+  .contacts__link_phone,
+.contacts__link_mail {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.1428571429;
+  }
 }
 
 .hero {
@@ -908,7 +917,7 @@ textarea:focus::-webkit-input-placeholder {
 }
 @media screen and (min-width: 480px) {
   .hero {
-    padding: 118px 60px 118px 60px;
+    padding: 118px 0;
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/Header-tabl.jpg);
   }
 }
@@ -920,7 +929,7 @@ textarea:focus::-webkit-input-placeholder {
 @media screen and (min-width: 768px) {
   .hero {
     max-width: 1600px;
-    padding: 204px 118px 204px 118px;
+    padding: 204px 0;
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero1.jpg);
   }
 }
@@ -931,7 +940,7 @@ textarea:focus::-webkit-input-placeholder {
 }
 @media screen and (min-width: 1200px) {
   .hero {
-    padding: 200px 452px 200px 452px;
+    padding: 200px 0;
   }
 }
 
@@ -940,21 +949,14 @@ textarea:focus::-webkit-input-placeholder {
   text-transform: uppercase;
   margin-bottom: 30px;
   font-size: 26px;
-  min-width: 100%;
   line-height: 1.6153846154;
   letter-spacing: 0.06em;
   display: flex;
   align-items: baseline;
   justify-content: center;
 }
-@media screen and (min-width: 480px), (min-width: 768px) {
-  .hero-title {
-    width: 360px;
-  }
-}
 @media screen and (min-width: 1200px) {
   .hero-title {
-    width: 696px;
     font-size: 44px;
     line-height: 1.3636363636;
   }
@@ -986,8 +988,14 @@ textarea:focus::-webkit-input-placeholder {
   }
 }
 
+.benefits__list {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
 @media screen and (min-width: 768px) {
   .benefits__list {
+    flex-direction: row;
     flex-wrap: wrap;
     display: flex;
     gap: 30px;
@@ -1010,17 +1018,6 @@ textarea:focus::-webkit-input-placeholder {
 @media screen and (min-width: 1200px) {
   .benefits__item {
     width: 270px;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .benefits__item:not(:last-child) {
-    margin-bottom: 30px;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .benefits__item:not(:last-child) {
-    margin-bottom: 0;
   }
 }
 
@@ -1076,6 +1073,11 @@ textarea:focus::-webkit-input-placeholder {
   line-height: 1.1428571429;
   width: 100%;
   text-align: center;
+}
+@media screen and (min-width: 768px) {
+  .benefits__title {
+    text-align: left;
+  }
 }
 
 .benefits__subtitle {
@@ -1149,7 +1151,7 @@ textarea:focus::-webkit-input-placeholder {
 .team {
   margin: 0 auto;
   background-color: var(--color-ourteam);
-  padding: 60 0;
+  padding: 60px 0;
 }
 @media screen and (min-width: 1200px) {
   .team {
@@ -1160,7 +1162,7 @@ textarea:focus::-webkit-input-placeholder {
 .team-wraper {
   border-radius: 0px 0px 4px 4px;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
-  width: 450px;
+  max-width: 450px;
   border-radius: 0px 0px 4px 4px;
   padding-top: 30px;
   padding-bottom: 30px;
@@ -1406,6 +1408,7 @@ address {
 @media screen and (min-width: 1200px) {
   .address-wrapper {
     margin-right: 70px;
+    margin-bottom: 0;
   }
 }
 
@@ -1530,6 +1533,7 @@ address {
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
+  justify-content: center;
 }
 
 .project-link {
@@ -1554,7 +1558,6 @@ address {
 }
 
 .project-item img {
-  width: 450px;
   height: 294px;
 }
 @media screen and (min-width: 768px) {

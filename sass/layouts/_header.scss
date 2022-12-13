@@ -2,8 +2,11 @@
 display: none;
     padding: 18px 0;
 @include tablet {
-    padding: 32px 0;
+    padding: 24px 0;
     display: flex;  
+}
+@include desktop {
+    padding: 24px 0;
 }
 }
 
@@ -107,14 +110,10 @@ align-items: center;
 }
 
 .contacts {
-    display: flex;
-    color: var(--color-gray);
-    gap: 50px;
-@include tablet{
     flex-direction: column;
-   gap: 0;
-   align-items: center;
-}
+        gap: 0;
+        align-items: center;
+    color: var(--color-gray);
 @include desktop{
     flex-direction:inherit;
     display: flex;
@@ -131,9 +130,7 @@ gap: 50px;
 }
 }
 .contacts__phone {
-@include tablet {
-   margin-right: 14px;
-    }
+margin-right: 10px;
 @include desktop{
     margin-right: 0;
 }
@@ -141,9 +138,9 @@ gap: 50px;
 
 .contacts__link_phone,
 .contacts__link_mail {
-    letter-spacing: 0.02em;
-    font-size: 14px;
-    font-weight: 500;
+    font-size: 12px;
+        font-weight: 500;
+        line-height: calc(14/12);
     line-height: calc(16/14);
     text-decoration: none;
     color: var(--color-gray);
@@ -155,5 +152,9 @@ gap: 50px;
     transition-delay: 0;
     transition-property: color;
     transition-timing-function: var(--transition-cubic);
-
+@include desktop {
+    font-size: 14px;
+        font-weight: 500;
+        line-height: calc(16/14);
+}
 }
