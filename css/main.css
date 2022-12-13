@@ -879,7 +879,7 @@ textarea:focus::-webkit-input-placeholder {
 
 .hero {
   color: var(--color-white);
-  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../bg-hero/Header-mob.jpg);
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/Header-mob.jpg);
   padding: 118px 0;
   justify-content: center;
   display: flex;
