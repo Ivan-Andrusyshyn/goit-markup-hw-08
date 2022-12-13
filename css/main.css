@@ -92,12 +92,11 @@ body {
 .modal {
   font-family: inherit;
   padding: 40px;
-  top: 50%;
-  left: 50%;
+  top: 45%;
+  left: 45%;
   transform: translate(-50%, -50%) scale(1) rotate(0) skewX(0);
   position: absolute;
-  width: 450px;
-  min-height: 581px;
+  width: 100vw;
   background-color: #ffffff;
   border-radius: 4px;
   border: 1px solid rgba(0, 0, 0, 0.1);
@@ -107,9 +106,20 @@ body {
   transform: translate(-50%, -50%) scale(1.5) rotate(360deg) skewX(360deg);
   background-image: linear-gradient(to right, #0057B7, #FFDD00);
 }
+@media screen and (min-width: 480px) {
+  .modal {
+    width: 450px;
+    min-height: 581px;
+    left: 50%;
+    top: 50%;
+  }
+}
 @media screen and (min-width: 1200px) {
   .modal {
     width: 528px;
+    min-height: 581px;
+    left: 50%;
+    top: 50%;
   }
 }
 
@@ -228,6 +238,7 @@ textarea:focus::-webkit-input-placeholder {
   color: var(--color-gray);
   display: flex;
   align-items: center;
+  flex-wrap: wrap;
 }
 .modal-checkbox span {
   box-shadow: rgba(0, 0, 0, 0.14);
@@ -241,15 +252,11 @@ textarea:focus::-webkit-input-placeholder {
   fill: transparent;
 }
 @media screen and (min-width: 1200px) {
-  .modal-checkbox span {
-    margin-left: 13px;
-  }
-}
-@media screen and (min-width: 1200px) {
   .modal-checkbox {
     font-size: 14px;
     font-weight: 400;
     line-height: 1.7142857143;
+    margin-left: 13px;
   }
 }
 
@@ -258,8 +265,13 @@ textarea:focus::-webkit-input-placeholder {
 }
 
 .modal-checkbox a {
-  margin-left: 6px;
+  margin-left: 25px;
   position: relative;
+}
+@media screen and (min-width: 444px) {
+  .modal-checkbox a {
+    margin-left: 7px;
+  }
 }
 
 .checkbox-link::before {
