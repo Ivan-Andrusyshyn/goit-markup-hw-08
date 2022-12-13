@@ -4,7 +4,7 @@ display: none;
 @include tablet {
     padding: 21px 0;
     display: flex;  
-}
+} 
 @include desktop {
     padding: 24px 0;
 }
@@ -104,7 +104,7 @@ align-items: center;
 .phone {
     width: 10px;
     height: 16px
-}
+} 
 .current {
     color: var(--color-blue);
 }
