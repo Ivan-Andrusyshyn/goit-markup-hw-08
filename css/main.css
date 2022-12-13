@@ -20,7 +20,6 @@ ul {
 
 .container {
   margin: 0 auto;
-  outline: 2px solid red;
   padding-left: 15px;
   padding-right: 15px;
 }
@@ -457,11 +456,6 @@ textarea:focus::-webkit-input-placeholder {
 .portfolio {
   padding: 60px 0 40px 0;
 }
-@media screen and (min-width: 768px) {
-  .portfolio {
-    padding: 60px 0 30px 0;
-  }
-}
 @media screen and (min-width: 1200px) {
   .portfolio {
     padding-top: 94px;
@@ -723,7 +717,7 @@ textarea:focus::-webkit-input-placeholder {
 }
 @media screen and (min-width: 768px) {
   .header {
-    padding: 24px 0;
+    padding: 21px 0;
     display: flex;
   }
 }
