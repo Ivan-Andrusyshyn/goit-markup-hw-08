@@ -92,8 +92,8 @@ body {
 .modal {
   font-family: inherit;
   padding: 40px;
-  top: 45%;
-  left: 45%;
+  top: 47%;
+  left: 47%;
   transform: translate(-50%, -50%) scale(1) rotate(0) skewX(0);
   position: absolute;
   width: 100vw;
