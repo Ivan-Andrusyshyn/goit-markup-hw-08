@@ -135,7 +135,6 @@ body {
   width: 30px;
   height: 30px;
   border-radius: 50%;
-  background-color: var(--color-white);
   border: 1px solid rgba(0, 0, 0, 0.1);
   cursor: pointer;
   display: flex;
@@ -148,6 +147,7 @@ body {
 }
 
 .close-svg {
+  z-index: 1;
   transition: fill 250ms linear;
   width: 15px;
   height: 15px;
