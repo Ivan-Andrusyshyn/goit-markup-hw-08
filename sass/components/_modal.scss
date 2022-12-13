@@ -64,6 +64,7 @@
 }
 
 .close-svg {
+    transition: fill 250ms linear;
     width: 15px;
     height: 15px;
     fill: var(--color-black);
