@@ -1,0 +1,21 @@
+@import './bases/resets';
+@import './utils/mixins.scss';
+@import './utils/variables';
+@import './bases/body';
+
+
+@import './components/modal';
+@import './components/header-mob';
+@import './components/filters';
+@import './components/hero-btn';
+@import './components/footer-form';
+@import './components/social-link';
+
+@import './layouts/header';
+@import './layouts/hero';
+@import './layouts/benefits';
+@import './layouts/task';
+@import './layouts/teams';
+@import './layouts/ourcliens';
+@import './layouts/footer';
+@import './layouts/projects';

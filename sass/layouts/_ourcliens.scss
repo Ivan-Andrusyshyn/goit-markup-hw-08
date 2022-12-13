@@ -1,0 +1,80 @@
+.clients {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    margin: 0 auto;
+    width: 100%;
+    @media screen and (min-width:480px) {
+            max-width: 480px;
+        }
+    
+  @include tablet{
+           max-width: 768px;
+        }
+    @include desktop {
+            max-width: 1200px;
+            padding-top: 94px;
+            padding-bottom: 94px;
+        }
+}
+
+.client-items {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+    justify-content: center;
+@include tablet{
+        max-width: 768px;
+    }
+@include desktop {
+    max-width: 1200px   
+        
+    }
+}
+
+.client-item {
+    width: 210px;
+    min-height: 92px;
+@include tablet {
+    width: 226px;
+    }
+@include desktop{
+         width: 170px;
+     }
+}
+.client-link {
+    border-radius: 4px;
+    border: 1px solid #AFB1B8;
+    max-width:100%;
+   height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #AFB1B8;
+    transition-duration: 250ms;
+    transition-delay: 0;
+    transition-property: border;
+    transition-timing-function: var(--transition-cubic);
+    &:hover,
+    &:focus {
+            border: 1px solid var(--color-blue);
+            fill: var(--color-blue);
+        }   
+    &:focus {
+            border: 1px solid #2196F3;
+        }
+    }
+
+.client-link-item {
+    fill: #AFB1B8;
+    transition-duration: 250ms;
+    transition-delay: 0;
+    transition-property: fill;
+    transition-timing-function: var(--transition-cubic);
+    .client-link:hover & {
+            fill: var(--color-blue);
+        }
+    
+   .client-link:focus & {
+            fill: var(--color-blue);
+        }
+}
