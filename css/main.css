@@ -148,6 +148,13 @@ body {
 .close-modal:focus svg {
   fill: var(--color-blue);
 }
+@media screen and (max-width: 767px) {
+  .close-modal {
+    background-image: url(../images/clouse-bg-x.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+}
 
 .close-svg {
   transition: fill 250ms linear;
