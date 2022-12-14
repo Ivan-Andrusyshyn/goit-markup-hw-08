@@ -51,9 +51,9 @@ background-image:linear-gradient(rgba(47, 48, 58, 0.4),
     text-align: center;
     text-transform: uppercase;
     margin-bottom: 30px;
-    font-size: 26px;
+    font-size: 24px;
     // min-width:100%;
-    line-height: calc(42 / 26);
+    line-height: calc(32 / 24);
     letter-spacing: 0.06em; 
     display: flex;
     align-items: baseline;
@@ -65,5 +65,5 @@ background-image:linear-gradient(rgba(47, 48, 58, 0.4),
         // width: 696px;
             font-size: 44px;
            line-height: calc(60 / 44);
-        }
+        } 
     }

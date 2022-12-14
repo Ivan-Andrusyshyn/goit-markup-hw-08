@@ -148,6 +148,11 @@ body {
 .close-modal:focus svg {
   fill: var(--color-blue);
 }
+@media screen and (max-width: 767px) {
+  .close-modal {
+    background-color: none;
+  }
+}
 
 .close-svg {
   transition: fill 250ms linear;
@@ -945,8 +950,8 @@ textarea:focus::-webkit-input-placeholder {
   text-align: center;
   text-transform: uppercase;
   margin-bottom: 30px;
-  font-size: 26px;
-  line-height: 1.6153846154;
+  font-size: 24px;
+  line-height: 1.3333333333;
   letter-spacing: 0.06em;
   display: flex;
   align-items: baseline;
