@@ -157,6 +157,7 @@ body {
     background-size: cover;
     width: auto;
     height: auto;
+    border: none;
   }
 }
 
