@@ -65,11 +65,12 @@
         
 @media screen and (max-width:767px) {
     background-color: none;
-//     background-image: url(../images/clouse-bg-x.svg);
-//     background-position: center;
-//     background-repeat: no-repeat;
-//     background-size: contain;
-// } 
+    background-image: url(../images/clouse-bg-x.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: auto;
+    height: auto;
 }
 }
 .close-svg {

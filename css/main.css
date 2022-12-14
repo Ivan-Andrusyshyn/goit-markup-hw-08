@@ -151,6 +151,12 @@ body {
 @media screen and (max-width: 767px) {
   .close-modal {
     background-color: none;
+    background-image: url(../images/clouse-bg-x.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: auto;
+    height: auto;
   }
 }
 
