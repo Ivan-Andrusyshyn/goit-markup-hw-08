@@ -63,7 +63,8 @@
           fill:var(--color-blue);
         }
         
-// @media screen and (max-width:767px) {
+@media screen and (max-width:767px) {
+    background-color: none;
 //     background-image: url(../images/clouse-bg-x.svg);
 //     background-position: center;
 //     background-repeat: no-repeat;
@@ -73,11 +74,10 @@
 
 .close-svg {
     transition: fill 250ms linear;
-   max-width: 20px;
+   max-width:20px;
     height: auto;
     fill: var(--color-black);
-    justify-content: center;
-    align-items: center;
+    
 }
 .is-hidden {
     opacity: 0;
