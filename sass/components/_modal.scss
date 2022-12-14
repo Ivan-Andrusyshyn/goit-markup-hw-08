@@ -62,18 +62,19 @@
     &:focus svg {
           fill:var(--color-blue);
         }
-@media screen and (max-width:767px) {
-    background-image: url(../images/clouse-bg-x.svg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: contain;
-} 
+        
+// @media screen and (max-width:767px) {
+//     background-image: url(../images/clouse-bg-x.svg);
+//     background-position: center;
+//     background-repeat: no-repeat;
+//     background-size: contain;
+// } 
 }
 
 .close-svg {
     transition: fill 250ms linear;
-    width: 20px;
-    height: 20px;
+   max-width: 20px;
+    height: auto;
     fill: var(--color-black);
     justify-content: center;
     align-items: center;
