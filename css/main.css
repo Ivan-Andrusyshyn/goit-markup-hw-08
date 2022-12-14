@@ -142,6 +142,7 @@ body {
   justify-content: center;
   align-items: center;
   stroke: black;
+  fill: var(--color-black);
 }
 .close-modal:hover svg {
   fill: var(--color-blue);

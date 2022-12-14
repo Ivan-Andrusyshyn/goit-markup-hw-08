@@ -57,13 +57,14 @@
     justify-content: center;
     align-items: center;
     stroke: black;
+    fill: var(--color-black);
     &:hover svg {
             fill: var(--color-blue);
         }
     &:focus svg {
           fill:var(--color-blue);
         }
-        
+}
 // @media screen and (max-width:767px) {
 //     background-color: none;
 //     background-image: url(../images/clouse-bg-x.svg);
@@ -71,7 +72,6 @@
 //     background-repeat: no-repeat;
 //    background-size: cover;
 // } 
-}
 .close-svg {
     transition: fill 250ms linear;
    max-width:20px;
