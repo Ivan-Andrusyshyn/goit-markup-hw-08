@@ -141,24 +141,13 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  stroke: black;
 }
 .close-modal:hover svg {
   fill: var(--color-blue);
 }
 .close-modal:focus svg {
   fill: var(--color-blue);
-}
-@media screen and (max-width: 767px) {
-  .close-modal {
-    background-color: none;
-    background-image: url(../images/clouse-bg-x.svg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: auto;
-    height: auto;
-    border: none;
-  }
 }
 
 .close-svg {
