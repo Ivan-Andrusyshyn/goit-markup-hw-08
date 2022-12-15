@@ -138,6 +138,8 @@ body {
   background-color: transparent;
   border: 1px solid rgba(0, 0, 0, 0.1);
   cursor: pointer;
+  display: flex;
+  align-items: center;
   fill: black;
 }
 .close-modal:hover svg {
@@ -148,7 +150,6 @@ body {
 }
 
 .close-svg {
-  display: block;
   z-index: 111;
   transition: fill 250ms linear;
   max-width: 20px;
@@ -347,7 +348,7 @@ textarea:focus::-webkit-input-placeholder {
 .header-mob {
   display: flex;
   justify-content: space-between;
-  padding: 16px 10px;
+  padding: 10px 10px;
   align-items: center;
 }
 @media screen and (min-width: 768px) {
@@ -357,12 +358,15 @@ textarea:focus::-webkit-input-placeholder {
 }
 
 .btn-menu-open {
+  width: 40px;
+  height: 40px;
   transition-duration: 250ms;
   transition-delay: 0;
   transition-property: fill;
   transition-timing-function: var(--transition-cubic);
   border: none;
   background-color: transparent;
+  padding: 0;
 }
 .btn-menu-open:focus, .btn-menu-open:hover {
   fill: var(--color-blue);

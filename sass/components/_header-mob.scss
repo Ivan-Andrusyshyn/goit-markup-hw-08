@@ -1,7 +1,7 @@
 .header-mob {
     display: flex;
     justify-content: space-between;
-    padding: 16px 10px;
+    padding: 10px 10px;
     align-items: center;
 
     @include tablet {
@@ -10,13 +10,15 @@
 }
 
 .btn-menu-open {
+    width: 40px;
+    height: 40px;
     transition-duration: 250ms;
     transition-delay: 0;
     transition-property: fill;
     transition-timing-function: var(--transition-cubic);
     border: none;
     background-color: transparent;
-
+    padding: 0;
     &:focus,
     &:hover {
         fill: var(--color-blue);
