@@ -56,8 +56,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    stroke: black;
- svg> path { fill: var(--color-black);}
+    fill: black;
+
     &:hover svg {
             fill: var(--color-blue);
         }
@@ -79,6 +79,7 @@
    max-width:20px;
     height: auto;
     fill: var(--color-black);
+    opacity: 1;
     
 }
 .is-hidden {
