@@ -142,6 +142,8 @@ body {
   justify-content: center;
   align-items: center;
   stroke: black;
+}
+.close-modal svg > path {
   fill: var(--color-black);
 }
 .close-modal:hover svg {
